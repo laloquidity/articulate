@@ -32,7 +32,7 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
 ```
 
-> **Note:** Requires Python 3.10+ and [ffmpeg](https://ffmpeg.org/) installed on your system.
+> **Note:** Requires **Python 3.10–3.11** and [ffmpeg](https://ffmpeg.org/) installed on your system. Python 3.12 has compatibility issues with chatterbox-tts's numpy requirement.
 
 ### 2. Run
 
@@ -155,7 +155,7 @@ articulate video --audio audio.wav --timestamps ts.json
 
 | Requirement | Details |
 |---|---|
-| **Python** | 3.10 or higher |
+| **Python** | 3.10–3.11 recommended (3.12 has numpy compatibility issues) |
 | **ffmpeg** | Required for audio/video processing |
 | **GPU** | CUDA or Apple Silicon recommended (CPU works but slow) |
 | **RAM** | 8GB+ recommended |
